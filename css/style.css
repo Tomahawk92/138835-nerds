@@ -46,7 +46,7 @@ h2 {
 }
 
 .navigation li {
-    display: inline;
+
 }
 
 .user-block {
@@ -57,6 +57,16 @@ h2 {
 
 .slider {
     min-height: 350px;
+    background: lightyellow;
+}
+
+.slider-promo {
+    float: left;
+    width: 400px;
+}
+.slider-img {
+  float: right;
+
 }
 
 .services {
@@ -69,6 +79,7 @@ h2 {
     float:left;
     width: 240px;
     min-height: 300px;
+    margin-top: 80px;
     margin-right: 80px;
     background: lightgray;
 }
@@ -130,7 +141,51 @@ h2 {
 
 }
 
-.map-wrapper {
-    width: auto;
+.map{
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contacts {
+    position: absolute;
+    width: 250px;
+    height: 240px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 90px;
+    top: -1px;
+    background: white;
+    text-align: left;
+}
+
+.marker {
+    position: absolute;
+    top: -1px;
+    margin-left: 680px;
+    margin-top: 110px;
+}
+
+.logo-map {
+  position: absolute;
+    top: -1px;
+    margin-top: 55px;
+    margin-left: 35px;
+}
+
+.footer {
+    min-height: 146px;
+
+}
+
+.social {
+    float: left;
+    margin-right: 80px;
+
+}
+
+.social-btn {
+    float: left;
+    margin-right: 27px;
 
 }
