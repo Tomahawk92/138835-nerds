@@ -176,7 +176,8 @@ h2 {
     position: relative;
     float: left;
     width: 240px;
-    margin-right: 80px;
+    margin-left: 10px;
+    margin-right: 70px;
     margin-bottom: 80px;
 
 }
