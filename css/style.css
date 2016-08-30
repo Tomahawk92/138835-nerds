@@ -18,3 +18,43 @@ h2 {
     color: black;
     font-weight: normal;
     font-family: "Roboto", sans-serif;
+}
+
+.main-header {
+    min-height: 83px;
+
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    float: left;
+    width: 140px;
+    margin-right: 100px;
+    margin-top: 27px;
+
+}
+
+.navigation {
+    float: left;
+    width: 460px;
+    min-height: 83px;
+
+}
+
+.navigation li {
+    display: inline;
+}
+
+.user-block {
+    float: right;
+    width: 100px;
+    min-height: 83px;
+}
+
+.slider {
+    min-height: 350px;
+}
