@@ -75,6 +75,7 @@ h2 {
 
 }
 
+
 .services {
     margin-bottom: 80px;
     background: red;
@@ -145,6 +146,60 @@ h2 {
 
 .clients-logo:last-child {
     margin-right: 0px;
+
+}
+
+.wrapper-title {
+    min-height: 245px;
+    background: #eeeeee;
+    margin-bottom: 80px;
+
+}
+
+.filter {
+    float: left;
+    width: 240px;
+
+}
+
+.catalog {
+    float: right;
+    width: 570px;
+    background: lightgreen;
+}
+
+.catalog-filter li{
+    display: inline-block;
+}
+
+.catalog-item {
+    position: relative;
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+
+}
+
+.catalog-item:nth-child(even) {
+    margin-right: 0px;
+
+}
+
+.catalog-item-desc {
+    display: non;
+    position: absolute;
+    width: 200px;
+    height: 165px;
+    margin: 20px;
+    padding-top: 35px;
+    top: -1px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.catalog-page li {
+    display: inline-block;
 
 }
 
