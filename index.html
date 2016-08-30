@@ -7,12 +7,12 @@
     </head>
     <body>
         <header class="main-header">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="logo">
                     <img src="img\logo-nerds.png" alt="Нёрдс"/>
                 </div>
                 <nav class="navigation">
-                    <ul>
+                    <ul class="navigation-list">
                         <li><a href="#">Студия</a></li>
                         <li><a href="#">Клиенты</a></li>
                         <li><a href="#">Магазин</a></li>
@@ -25,20 +25,22 @@
             </div>
         </header>
         <div class="slider">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="slider-promo">
                     <h1>Долго, дорого, скрупулезно.</h1>
                     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                     <a href="#">Узнать больше</a>
                 </div>
-            </div>
-            <div class="slider-img">
-                <img src="img\index-slider-img-1.png" />
+                <div class="slider-radio">
+                </div>
+                <div class="slider-img">
+                    <img src="img\index-slider-img-1.png" />
+                </div>
             </div>
         </div>
         <main>
             <div class="container">
-                <div class="services">
+                <div class="services clearfix">
                     <div class="services-item">
                         <div class="services-item-pic">
                             <img src="img\index-img-1.png" alt="Веб-сайты" />
@@ -70,12 +72,12 @@
                         <a href="#" class="btn-services">Заказать</a>
                     </div>
                 </div>
-                <div class="about">
+                <div class="about clearfix">
                     <div class="about-desc">
                         <div class="description">
                           <p class="description-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
                           <p class="description-text">Исповедуем принципы минимализма и чистоты.
-                          Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы/</p>
+                          Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
                         </div>
                         <div class="about-logo">
                             <img src="img\logo-nerds-second.png" alt="Логотип"/>
@@ -84,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-list">
+                    <div class="about-list clearfix">
                         <div class="services-left">
                             <p class="list-headline">
                               Выполняем заказы на разработку:
@@ -107,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="clients">
+                <div class="clients clearfix">
                     <div class="clients-logo clients-logo-first">
                         <img src="img\clients-1.png" alt="Glukhanko" />
                     </div>
@@ -122,44 +124,53 @@
         </main>
         <div class="map-wrapper">
             <div class="map">
-              <!-- Карта -->
-            </div>
-            <div class="container">
-                <div class="contacts">
-                    <p class="contacts-title">
-                        NERDS DESING STUDIO
-                    </p>
-                    <p>
-                        191186, Санкт-Петербург,<br>
-                        ул. Б. Конюшенная, д. 19/8
-                    </p>
-                    <p>
-                        тел. +7 (812) 275-75-75
-                    </p>
-                    <a class="contact-btn" href="#">НАПИШИТЕ НАМ</a>
+                <!-- Карта -->
+                <img src="img\map.jpg" alt="Карта" width="1199" height="416" />
+                <div class="container">
+                    <div class="contacts">
+                        <p class="contacts-title">
+                            NERDS DESING STUDIO
+                        </p>
+                        <p>
+                            191186, Санкт-Петербург,<br>
+                            ул. Б. Конюшенная, д. 19/8
+                        </p>
+                        <p>
+                            тел. +7 (812) 275-75-75
+                        </p>
+                        <a class="contact-btn" href="#">НАПИШИТЕ НАМ</a>
+                    </div>
+                    <div class="marker">
+                        <img src="img\marker-nerds-map.png" alt="Тут!" />
+                        <div class="logo-map">
+                            <img src="img\logo-nerds-map.png" alt="Нёрдс" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <footer>
             <div class="container">
-                <div class="social">
-                    <a href="#" class="social-btn btn-vk">
-                        <img src="#" alt="VK" />
-                    </a>
-                    <a href="#" class="social-btn btn-fb">
-                        <img src="#" alt="FB" />
-                    </a>
-                    <a href="#" class="social-btn btn-inst" >
-                        <img src="#" alt="Instagram" />
-                    </a>
-                </div>
-                <div class="footer-desc">
-                    <p class="footer-title">
-                        <b>Давайте дружить, это выгодно!</b>
-                    </p>
-                    <p class="footer-text">
-                        Скидка 10% для друзей из социальных сетей.
-                    </p>
+                <div class="footer clearfix">
+                    <div class="social">
+                        <a href="#" class="social-btn btn-vk">
+                            <img src="img\social-btn.png" alt="VK" />
+                        </a>
+                        <a href="#" class="social-btn btn-fb">
+                            <img src="img\social-btn.png" alt="FB" />
+                        </a>
+                        <a href="#" class="social-btn btn-inst" >
+                            <img src="img\social-btn.png" alt="Instagram" />
+                        </a>
+                    </div>
+                    <div class="footer-desc">
+                        <p class="footer-title">
+                            <b>Давайте дружить, это выгодно!</b>
+                        </p>
+                        <p class="footer-text">
+                            Скидка 10% для друзей из социальных сетей.
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
