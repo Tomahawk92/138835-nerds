@@ -58,3 +58,79 @@ h2 {
 .slider {
     min-height: 350px;
 }
+
+.services {
+    margin-bottom: 80px;
+    background: red;
+    min-height: 380px;
+}
+
+.services-item {
+    float:left;
+    width: 240px;
+    min-height: 300px;
+    margin-right: 80px;
+    background: lightgray;
+}
+.services-item:last-child {
+  float: right;
+  margin-right: 0px;
+}
+
+
+
+.description {
+  float: left;
+  width: 620px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+
+}
+
+.about-logo {
+    float: right;
+    width: 240px;
+    margin-bottom: 50px;
+}
+
+.about {
+    min-height: 375px;
+    background: lightgreen;
+}
+
+.services-left {
+    float: left;
+    width: 620px;
+    margin-right: 20px;
+
+}
+
+.services-right {
+    float: right;
+    width: 240px;
+}
+
+.clients {
+    width: auto;
+    min-height: 170px;
+    background: lightblue;
+    margin-bottom: 85px;
+}
+
+.clients-logo {
+    float: left;
+    width: auto;
+    margin-right: 125px;
+    padding-left: 10px;
+    padding-top: 55px;
+}
+
+.clients-logo:last-child {
+    margin-right: 0px;
+
+}
+
+.map-wrapper {
+    width: auto;
+
+}
