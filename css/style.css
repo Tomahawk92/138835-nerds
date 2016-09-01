@@ -1,19 +1,21 @@
 body {
-    font-size: 15px;
+    min-width: 900px;
+    font-size: 16px;
     line-height: 20px;
     color: #000000;
     font-weight: normal;
     font-family: "Roboto", sans-serif;
+    background: #ffffff;
 }
 h1 {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 36px;
+    line-height: 36px;
     color: #000000;
-    font-weight: normal;;
+
 }
 h2 {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 30px;
     color: #000000;
     font-weight: normal;
 }
@@ -21,6 +23,7 @@ h2 {
 .main-header {
     min-height: 83px;
     position: relative;
+    background: #eeeeee;
 
 }
 .container {
@@ -38,7 +41,7 @@ h2 {
 .logo {
     float: left;
     width: 140px;
-    margin-right: 100px;
+    margin-right: 160px;
     margin-top: 27px;
 
 }
@@ -47,27 +50,94 @@ h2 {
     float: left;
     width: 460px;
     min-height: 83px;
+}
 
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
 }
 
 .navigation li {
     display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+
+.navigation a {
+    display: block;
+    padding: 55px 23px 10px 23px;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.navigation a:hover {
+    color: #fb565a;
+}
+
+.navigation a:active {
+    color: #000000;
+    opacity: 0.4;
+
 }
 
 .user-block {
     float: right;
-    width: 100px;
+    max-width: 140px;
     min-height: 83px;
+
+}
+
+.user-block a:hover {
+    color: #fb565a;
+}
+
+.user-block a:active {
+    color: #000000;
+    opacity: 0.4;
+
+}
+
+.basket {
+    position: relative;
+    display: inline-block;
+    padding: 55px 0px 10px 50px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000000;
+    vertical-align: top;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.basket::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 22px;
+    width: 20px;
+    height: 20px;
+    background: url("img/icon-basket.png");
+
 }
 
 .slider {
     min-height: 350px;
-    background: lightyellow;
+    padding: 40px;
+    background: #eeeeee;
 }
 
 .slider-promo {
     float: left;
     width: 400px;
+    font-size: 16px;
+    line-height: 22px;
 }
 .slider-img {
   float: right;
@@ -129,21 +199,17 @@ h2 {
 }
 
 .clients {
-
-    height: 170px;
-    background: lightblue;
-    margin-bottom: 85px;
+    padding: 80px 0;
 }
 
 .clients-logo {
     float: left;
     height: 125px;
-    width: 210px;
-    margin-right: 105px;
-    padding-top: 45px;
-    padding-left: 10px;
+    width: 240px;
+    margin-right: 80px;
+    text-align: center;
     background: green;
-    line-height: 90px;
+    line-height: 125px;
 }
 
 .clients-logo img {
