@@ -1,9 +1,9 @@
 body {
-    min-width: 900px;
+    min-width: 880px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
     color: #000000;
-    font-weight: normal;
+    font-weight: 500;
     font-family: "Roboto", sans-serif;
     background: #ffffff;
 }
@@ -11,13 +11,13 @@ h1 {
     font-size: 36px;
     line-height: 36px;
     color: #000000;
-
+    font-weight: 500;
 }
 h2 {
     font-size: 18px;
     line-height: 30px;
     color: #000000;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .main-header {
@@ -119,16 +119,30 @@ h2 {
 .basket::before {
     content: "";
     position: absolute;
-    top: 60px;
-    left: 22px;
-    width: 20px;
-    height: 20px;
-    background: url("img/icon-basket.png");
+    top: 62px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/sprites/spritesheet.png");
+    background-position: -5px -334px;
+    opacity: 0.4;
+
+}
+
+.basket:hover::before {
+  background: url("../img/sprites/spritesheet.png");
+  background-position: -5px -5px;
+
+}
+
+.basket:active::before {
+  background: url("../img/sprites/spritesheet.png");
+  background-position: -5px -334px;
 
 }
 
 .slider {
-    min-height: 350px;
+    min-height: 260px;
     padding: 40px;
     background: #eeeeee;
 }
@@ -139,6 +153,75 @@ h2 {
     font-size: 16px;
     line-height: 22px;
 }
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    background: #fb565a;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #d6494d;
+
+}
+
+.btn:active {
+    background: #b63538;
+
+}
+
+.btn-slider {
+    padding: 10px 70px;
+
+}
+
+.btn-services-apps {
+    background: #00ca74;
+
+}
+
+.btn-services-apps:hover {
+    background: #01a25e;
+
+}
+
+.btn-services-apps:active {
+    background: #009053;
+
+}
+
+.btn-services-present {
+    background: #efc84a;
+
+}
+
+.btn-services-present:hover {
+    background: #d6ae2c;
+
+}
+
+.btn-services-present:active {
+    background: #c09b24;
+
+}
+
+.contact-btn {
+    margin-left: 3px;
+    padding: 10px 55px;
+
+}
+
 .slider-img {
   float: right;
 
@@ -147,8 +230,10 @@ h2 {
 
 .services {
     margin-bottom: 80px;
-    background: red;
+    padding-bottom: 80px;
+    background: #ffffff;
     min-height: 380px;
+    border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
@@ -157,21 +242,44 @@ h2 {
     min-height: 300px;
     margin-top: 80px;
     margin-right: 80px;
-    background: lightgray;
 }
+
 .services-item:last-child {
     float: right;
     width: 240px;
     margin-right: 0px;
 }
 
+.services-item h2 {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
 
+}
+
+.services-item-desc p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    color: #283136;
+}
 
 .description {
     float: left;
     width: 620px;
-    margin-right: 20px;
-    margin-bottom: 50px;
+
+}
+
+.about {
+    min-height: 375px;
+    padding-bottom: 65px;
+    background: #ffffff;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.description-title {
+    font-size: 36px;
+    line-height: 36px;
 
 }
 
@@ -179,11 +287,12 @@ h2 {
     float: right;
     width: 240px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
-.about {
-    min-height: 375px;
-    background: lightgreen;
+.list-headline {
+    text-transform: uppercase;
+
 }
 
 .services-left {
@@ -198,8 +307,32 @@ h2 {
     width: 240px;
 }
 
+.services-list li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 25px;
+
+}
+
+.services-list li:last-child {
+    margin-bottom: 0px;
+}
+
+.services-list li::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+
+}
+
 .clients {
-    padding: 80px 0;
+    padding: 10px 0px;
+    margin-bottom: 85px;
+    border-bottom: 2px solid #eeeeee;
 }
 
 .clients-logo {
@@ -208,12 +341,18 @@ h2 {
     width: 240px;
     margin-right: 80px;
     text-align: center;
-    background: green;
+    background: #ffffff;
     line-height: 125px;
 }
 
 .clients-logo img {
     vertical-align: middle;
+    opacity: 0.2;
+
+}
+
+.clients-logo img:hover {
+    opacity: 1;
 
 }
 
@@ -291,12 +430,25 @@ h2 {
 .contacts {
     position: absolute;
     width: 230px;
-    height: 220px;
-    padding-top: 20px;
+    height: 230px;
+    padding-top: 10px;
     padding-left: 20px;
     bottom: 89px;
     background: white;
     text-align: left;
+}
+
+.contacts-title {
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+.contacts-info {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+
 }
 
 .marker {
@@ -320,25 +472,43 @@ h2 {
 
 .social {
     float: left;
-    width: 242px;
-    margin-right: 68px;
+    width: 250px;
+    margin-right: 60px;
 
 }
 
 .social-btn {
-    float: left;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
     width: 62px;
     margin-right: 27px;
 
 }
+
 
 .social-btn:last-child {
     margin-right: 0px;
 
 }
 
+
+
 .footer-desc {
     float: right;
     width: 570px;
+
+}
+
+.footer-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 22px;
+    color: #283136;
 
 }
