@@ -61,6 +61,7 @@ h2 {
 
 .navigation li {
     display: inline-block;
+    margin: 55px 23px 10px 23px;
     font-size: 14px;
     line-height: 30px;
     color: #000000;
@@ -70,7 +71,6 @@ h2 {
 
 .navigation a {
     display: block;
-    padding: 55px 23px 10px 23px;
     color: #000000;
     text-decoration: none;
 
@@ -88,6 +88,7 @@ h2 {
 
 .user-block {
     float: right;
+    margin: 55px 0px 10px 0px;
     max-width: 140px;
     min-height: 83px;
 
@@ -106,7 +107,7 @@ h2 {
 .basket {
     position: relative;
     display: inline-block;
-    padding: 55px 0px 10px 50px;
+    padding-left: 50px;
     font-size: 14px;
     line-height: 30px;
     color: #000000;
@@ -119,7 +120,7 @@ h2 {
 .basket::before {
     content: "";
     position: absolute;
-    top: 62px;
+    top: 7px;
     left: 20px;
     width: 15px;
     height: 15px;
@@ -132,7 +133,7 @@ h2 {
 .basket:hover::before {
   background: url("../img/sprites/spritesheet.png");
   background-position: -5px -5px;
-
+  opacity: 1;
 }
 
 .basket:active::before {
@@ -178,6 +179,7 @@ h2 {
 
 .btn:active {
     background: #b63538;
+    box-shadow: inset 0px 3px 0 0px #9b2d30;
 
 }
 
@@ -198,7 +200,7 @@ h2 {
 
 .btn-services-apps:active {
     background: #009053;
-
+    box-shadow: inset 0px 3px 0 0px #007b47;
 }
 
 .btn-services-present {
@@ -213,7 +215,7 @@ h2 {
 
 .btn-services-present:active {
     background: #c09b24;
-
+    box-shadow: inset 0px 3px 0 0px #a3841f;
 }
 
 .contact-btn {
@@ -290,6 +292,40 @@ h2 {
     text-align: center;
 }
 
+.logo-year {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    line-height: 8.56px;
+    text-transform: uppercase;
+    padding-left: 0px;
+    padding-top: 27px;
+    padding-bottom: 73px;
+}
+
+.logo-year::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 65px;
+    margin-top: 21px;
+    height: 2px;
+    background-color: #eeeeee;
+}
+
+.logo-year::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 4px;
+    width: 65px;
+    margin-top: 21px;
+    height: 2px;
+    background-color: #eeeeee;
+}
+
+
 .list-headline {
     text-transform: uppercase;
 
@@ -307,7 +343,7 @@ h2 {
     width: 240px;
 }
 
-.services-list li{
+.services-list li {
     position: relative;
     list-style: none;
     margin-bottom: 25px;
@@ -356,7 +392,7 @@ h2 {
 
 }
 
-.clients-logo:last-child {
+.clients-logo:nth-child(3n) {
     margin-right: 0px;
 
 }
@@ -482,17 +518,59 @@ h2 {
     display: inline-block;
     vertical-align: top;
     width: 62px;
+    height: 62px;
     margin-right: 27px;
+    border-radius: 30px;
+    background:  #e1e1e1;
+}
+
+.social-btn:hover {
+    background: #fb565a;
 
 }
 
+.social-btn:active {
+    background: #d6494d;
+    box-shadow: inset 0px 3px 0 0px #9b2d30;
+}
 
 .social-btn:last-child {
     margin-right: 0px;
 
 }
 
+.btn-fb::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 16px;
+    left: 16px;
+    background: url("../img/sprites/spritesheet.png");
+    background-position: 4px -203px;
+}
 
+.btn-vk::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 16px;
+    left: 16px;
+    background: url("../img/sprites/spritesheet.png");
+    background-position: -3px -300px;
+}
+
+.btn-inst::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 16px;
+    left: 16px;
+    background: url("../img/sprites/spritesheet.png");
+    background-position: 0px -234px;;
+}
 
 .footer-desc {
     float: right;
