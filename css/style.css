@@ -4,15 +4,16 @@ body {
     line-height: 22px;
     color: #000000;
     font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    background: #ffffff;
+    font-family: "Roboto", "Verdana", sans-serif;
 }
+
 h1 {
     font-size: 36px;
     line-height: 36px;
     color: #000000;
     font-weight: 500;
 }
+
 h2 {
     font-size: 18px;
     line-height: 30px;
@@ -26,8 +27,8 @@ h2 {
     min-height: 83px;
     position: relative;
     background: #eeeeee;
-
 }
+
 .container {
     width: 880px;
     margin: 0 auto;
@@ -45,7 +46,6 @@ h2 {
     width: 140px;
     margin-right: 160px;
     margin-top: 27px;
-
 }
 
 .navigation {
@@ -63,6 +63,7 @@ h2 {
 
 .navigation li {
     display: inline-block;
+    vertical-align: top;
     margin: 55px 23px 10px 23px;
     font-size: 14px;
     line-height: 30px;
@@ -75,7 +76,6 @@ h2 {
     display: block;
     color: #000000;
     text-decoration: none;
-
 }
 
 .navigation a:hover {
@@ -85,7 +85,21 @@ h2 {
 .navigation a:active {
     color: #000000;
     opacity: 0.4;
+}
 
+.navigation .active {
+    position: relative;
+    background: none;
+}
+
+.navigation .active::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #fb565a;
 }
 
 .user-block {
@@ -93,7 +107,6 @@ h2 {
     margin: 0px 0px 10px 0px;
     max-width: 140px;
     min-height: 83px;
-
 }
 
 .user-block a:hover {
@@ -103,13 +116,13 @@ h2 {
 .user-block a:active {
     color: #000000;
     opacity: 0.4;
-
 }
 
 .basket {
     position: relative;
     display: inline-block;
-    padding-top: 55px;
+    vertical-align: top;
+    margin-top: 55px;
     padding-left: 50px;
     font-size: 14px;
     line-height: 30px;
@@ -117,20 +130,18 @@ h2 {
     vertical-align: top;
     text-transform: uppercase;
     text-decoration: none;
-
 }
 
 .basket::before {
     content: "";
     position: absolute;
-    top: 61px;
+    top: 7px;
     left: 20px;
     width: 15px;
     height: 15px;
     background: url("../img/sprites/spritesheet.png");
     background-position: -5px -334px;
     opacity: 0.4;
-
 }
 
 .basket:hover::before {
@@ -142,7 +153,6 @@ h2 {
 .basket:active::before {
   background: url("../img/sprites/spritesheet.png");
   background-position: -5px -334px;
-
 }
 
 /*Слайдер*/
@@ -162,18 +172,17 @@ h2 {
 
 .slider-img {
     float: right;
-
 }
 
 /*Кнопки*/
 
 .btn {
     display: inline-block;
+    vertical-align: top;
     padding: 10px 40px 10px;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    font-family: "Roboto", sans-serif;
     color: #ffffff;
     background: #fb565a;
     border: none;
@@ -186,28 +195,23 @@ h2 {
 
 .btn:hover {
     background: #d6494d;
-
 }
 
 .btn:active {
     background: #b63538;
     box-shadow: inset 0px 3px 0 0px #9b2d30;
-
 }
 
 .btn-slider {
     padding: 10px 70px;
-
 }
 
 .btn-services-apps {
     background: #00ca74;
-
 }
 
 .btn-services-apps:hover {
     background: #01a25e;
-
 }
 
 .btn-services-apps:active {
@@ -217,12 +221,10 @@ h2 {
 
 .btn-services-present {
     background: #efc84a;
-
 }
 
 .btn-services-present:hover {
     background: #d6ae2c;
-
 }
 
 .btn-services-present:active {
@@ -231,9 +233,8 @@ h2 {
 }
 
 .contact-btn {
-    margin-left: 3px;
-    padding: 10px 55px;
-
+    margin-left: 2px;
+    padding: 10px 54px;
 }
 
 .btn-catalog {
@@ -244,7 +245,6 @@ h2 {
     padding-right: 0;
     font-size: 18px;
     line-height: 8.56px;
-
 }
 
 .btn-filter-show {
@@ -254,18 +254,15 @@ h2 {
   line-height: 18px;
   color: #000000;
   background: #f1f1f1;
-
 }
 
 .btn-filter-show:hover {
     background: #e5e5e5;
-
 }
 
 .btn-filter-show:active {
     background: #d5d5d5;
     box-shadow: inset 0px 3px 0 0px #b5b5b5;
-
 }
 
 /*Блок сервисов*/
@@ -296,7 +293,6 @@ h2 {
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
-
 }
 
 .services-item-desc p {
@@ -311,7 +307,6 @@ h2 {
 .description {
     float: left;
     width: 620px;
-
 }
 
 .about {
@@ -324,7 +319,6 @@ h2 {
 .description-title {
     font-size: 36px;
     line-height: 36px;
-
 }
 
 .about-logo {
@@ -370,14 +364,12 @@ h2 {
 
 .list-headline {
     text-transform: uppercase;
-
 }
 
 .services-left {
     float: left;
     width: 620px;
     margin-right: 20px;
-
 }
 
 .services-right {
@@ -389,7 +381,6 @@ h2 {
     position: relative;
     list-style: none;
     margin-bottom: 25px;
-
 }
 
 .services-list li:last-child {
@@ -404,7 +395,6 @@ h2 {
     width: 25px;
     height: 2px;
     background-color: #fb565a;
-
 }
 
 /*Блок с клиентами*/
@@ -428,17 +418,14 @@ h2 {
 .clients-logo img {
     vertical-align: middle;
     opacity: 0.2;
-
 }
 
 .clients-logo img:hover {
     opacity: 1;
-
 }
 
 .clients-logo:nth-child(3n) {
     margin-right: 0px;
-
 }
 
 /*Конец блока с клиентами*/
@@ -449,7 +436,6 @@ h2 {
     min-height: 245px;
     background: #eeeeee;
     margin-bottom: 80px;
-
 }
 
 .title-page h1 {
@@ -466,7 +452,6 @@ h2 {
 .filter {
     float: left;
     width: 240px;
-
 }
 
 fieldset {
@@ -478,7 +463,6 @@ legend {
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
-
 }
 
 input[type="checkbox"],
@@ -501,7 +485,6 @@ input[type="radio"] + label {
 input[type="checkbox"] + label:hover,
 input[type="radio"] + label:hover {
     color: #000000;
-
 }
 
 input[type="radio"] + label::before {
@@ -514,12 +497,10 @@ input[type="radio"] + label::before {
     height: 18px;
     border: 3px solid #c1c1c1;
     border-radius: 50%;
-
 }
 
 input[type="radio"] + label:hover::before {
     border: 3px solid #b5b5b5;
-
 }
 
 
@@ -537,7 +518,6 @@ input[type="radio"]:checked + label::after {
 
 input[type="radio"] + label:hover::after {
     background: #b5b5b5;
-
 }
 
 input[type="checkbox"] + label {
@@ -563,7 +543,7 @@ input[type="checkbox"] + label::before {
 
 
 input[type="checkbox"]:checked + label::after {
-  content: "";
+    content: "";
     display: block;
     position: absolute;
     width: 27px;
@@ -585,7 +565,6 @@ input[type="checkbox"]:checked + label::after {
 .filter-list {
     margin: 0;
     padding: 0;
-
 }
 
 .catalog-filter {
@@ -597,10 +576,10 @@ input[type="checkbox"]:checked + label::after {
 
 .catalog-filter li{
     display: inline-block;
+    vertical-align: top;
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
-
 }
 
 .catalog-filter a {
@@ -609,59 +588,57 @@ input[type="checkbox"]:checked + label::after {
     color: #000000;
     text-decoration: none;
     opacity: 0.3;
-
 }
 
 .catalog-filter-list {
     border-bottom: 1px dotted #00ca74;
-
 }
 
 .catalog-filter-list:hover {
     border-bottom: 1px solid #00ca74;
     opacity: 1;
-
 }
 
 .catalog-filter-list:active {
     border-bottom: none;
     opacity: 1;
-
 }
 
 
 .filter-down {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  width: 12px;
-  height: 11px;
-  background: url("../img/sprites/spritesheet.png");
-  background-position: -5px -166px;
-  opacity: 0.4;
-  cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid #c1c1c1;
+    cursor: pointer;
 }
 
 .filter-down:active {
-    opacity: 1;
-
+    border-top: 9px solid #000000;;
 }
 
 .filter-up {
-  position: absolute;
-  top: 8px;
-  right: 0px;
-  width: 12px;
-  height: 11px;
-  background: url("../img/sprites/spritesheet.png");
-  background-position: -5px -269px;
-  opacity: 0.4;
-  cursor: pointer;
-}
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 9px solid #c1c1c1;
+    cursor: pointer;
+  }
 
 .filter-up:active {
-    opacity: 1;
+    border-bottom: 9px solid #000000;
+}
 
+.filter-down-active {
+    border-top: 9px solid #00ca74;
 }
 
 .catalog-item {
@@ -678,12 +655,10 @@ input[type="checkbox"]:checked + label::after {
 
 .catalog-item:nth-child(even) {
     margin-right: 0px;
-
 }
 
 .catalog-item:hover {
     border-top: 30px solid #979797;
-
 }
 
 .catalog-item::before {
@@ -695,6 +670,7 @@ input[type="checkbox"]:checked + label::after {
     height: 10px;
     background: #ffffff;
     border-radius: 5px;
+    box-shadow: 17px 0 0 #ffffff,34px 0 0 #ffffff;
 }
 
 
@@ -711,17 +687,17 @@ input[type="checkbox"]:checked + label::after {
 
 .catalog-item:hover .catalog-item-desc {
     display: block;
-
 }
 
 .catalog-page li {
     display: inline-block;
+    vertical-align: top;
     margin-right: 10px;
-
 }
 
 .page-btn {
     display: inline-block;
+    vertical-align: top;
     width: 38px;
     height: 28px;
     padding-top: 10px;
@@ -740,8 +716,6 @@ input[type="checkbox"]:checked + label::after {
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-
-
 }
 
 .catalog-page-active {
@@ -756,35 +730,30 @@ input[type="checkbox"]:checked + label::after {
 
 .catalog-page-next{
     width: 140px;
-
 };
 
 .page-btn:hover {
     background: #e5e5e5;
-
 }
 
 .page-btn:active {
     background: #d5d5d5;
     box-shadow: inset 0px 3px 0 0px #b5b5b5;
-
 }
 
 .catalog-page-active:active {
     background: none;
     box-shadow: none;
-
 }
 
 .map{
-  position: relative;
+    position: relative;
     text-align: center;
     margin-bottom: 70px;
 }
 
 .map-wrapper {
-  position: relative;
-
+    position: relative;
 }
 
 .contacts {
@@ -801,14 +770,12 @@ input[type="checkbox"]:checked + label::after {
 .contacts-title {
     font-size: 16px;
     line-height: 30px;
-
 }
 
 .contacts-info {
     font-size: 16px;
     line-height: 20px;
     color: #666666;
-
 }
 
 .marker {
@@ -827,14 +794,12 @@ input[type="checkbox"]:checked + label::after {
 
 .footer {
     min-height: 146px;
-
 }
 
 .social {
     float: left;
-    width: 250px;
-    margin-right: 60px;
-
+    width: 260px;
+    margin-right: 50px;
 }
 
 .social-btn {
@@ -850,7 +815,6 @@ input[type="checkbox"]:checked + label::after {
 
 .social-btn:hover {
     background: #fb565a;
-
 }
 
 .social-btn:active {
@@ -860,7 +824,6 @@ input[type="checkbox"]:checked + label::after {
 
 .social-btn:last-child {
     margin-right: 0px;
-
 }
 
 .btn-fb::before {
@@ -899,7 +862,6 @@ input[type="checkbox"]:checked + label::after {
 .footer-desc {
     float: right;
     width: 570px;
-
 }
 
 .footer-title {
@@ -912,5 +874,4 @@ input[type="checkbox"]:checked + label::after {
     font-size: 16px;
     font-weight: 22px;
     color: #283136;
-
 }

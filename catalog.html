@@ -5,7 +5,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link href="css/style.css" rel="stylesheet">
 
         <title>Нёрдс | Каталог</title>
     </head>
@@ -13,14 +13,22 @@
         <header class="main-header">
             <div class="container clearfix">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo-nerds.png" alt="Нёрдс"/></a>
+                    <a href="index.html"><img src="img/logo-nerds.png" width="139" height="56" alt="Нёрдс"/></a>
                 </div>
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#">Студия</a></li>
-                        <li><a href="#">Клиенты</a></li>
-                        <li><a href="catalog.html">Магазин</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li>
+                            <a href="#">Студия</a>
+                        </li>
+                        <li>
+                            <a href="#">Клиенты</a>
+                        </li>
+                        <li>
+                            <a class="active" href="catalog.html">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="user-block">
@@ -47,24 +55,24 @@
                         </div>
                             <fieldset>
                                 <legend>Сетка:</legend>
-                                <input type="radio" name="product-group" id="radio-adaptiv" value="adaptive" checked></input>
+                                <input type="radio" name="product-group" id="radio-adaptiv" value="adaptive" checked>
                                 <label for="radio-adaptiv">Адаптивная</label>
-                                <input type="radio" name="product-group" id="radio-fixed" value="fixed"></input>
+                                <input type="radio" name="product-group" id="radio-fixed" value="fixed">
                                 <label for="radio-fixed">Фиксированная</label>
-                                <input type="radio" name="product-group" id="radio-extend" value="extend"></input>
+                                <input type="radio" name="product-group" id="radio-extend" value="extend">
                                 <label for="radio-extend">Резиновая</label>
                             </fieldset>
                             <fieldset>
                                 <legend>Особенности:</legend>
-                                <input type="checkbox" id="checkbox-slider" name="slider" checked></input>
+                                <input type="checkbox" id="checkbox-slider" name="slider" checked>
                                 <label for="checkbox-slider">Слайдер</label>
-                                <input type="checkbox" id="checkbox-edge" name="edge"></input>
+                                <input type="checkbox" id="checkbox-edge" name="edge">
                                 <label for="checkbox-edge">Блок преимуществ</label>
-                                <input type="checkbox" id="checkbox-news" name="news" checked></input>
+                                <input type="checkbox" id="checkbox-news" name="news" checked>
                                 <label for="checkbox-news">Новости</label>
-                                <input type="checkbox" id="checkbox-gallery" name="gallery"></input>
+                                <input type="checkbox" id="checkbox-gallery" name="gallery">
                                 <label for="checkbox-gallery">Галерея</label>
-                                <input type="checkbox" id="checkbox-basket" name="basket"></input>
+                                <input type="checkbox" id="checkbox-basket" name="basket">
                                 <label for="checkbox-basket">Корзина</label>
                             </fieldset>
                             <button class="btn btn-filter-show" type="submit" name="show">Показать</button>
@@ -73,22 +81,17 @@
                 <div class="catalog">
                     <div class="catalog-filter">
                         <ul class="filter-list">
-                            <li><span class="catalog-filter-title">сортировать:</span></li>
-                            <li><a class="catalog-filter-list" href="#">по цене</a></li>
-                            <li><a class="catalog-filter-list" href="#">по типу</a></li>
-                            <li><a class="catalog-filter-list" href="#">по функционалу</a></li>
+                            <li><span class="catalog-filter-title">Сортировать:</span></li>
+                            <li><a class="catalog-filter-list" href="#">По цене</a></li>
+                            <li><a class="catalog-filter-list" href="#">По типу</a></li>
+                            <li><a class="catalog-filter-list" href="#">По функционалу</a></li>
                         </ul>
-
-
                         <span class="filter-down filter-down-active"></span>
                         <span class="filter-up"></span>
                     </div>
                     <div class="catlog-main clearfix">
-                        <!-- ДЛЯ НАСТАВНИКА
-                              Не стал размечать блок появляющийся по наведению мыши,
-                              т.к. не знаю как это сделать -->
                         <div class="catalog-item">
-                            <img src="img/catlog-pic-item-1.jpg" alt="AVIATOR" />
+                            <img src="img/catlog-pic-item-1.jpg" width="240" height="240" alt="AVIATOR" />
                             <div class="catalog-item-desc">
                                 <h2>AVIATOR</h2>
                                 <p>Одностраничный макет с авторским дизайном</p>
@@ -96,7 +99,7 @@
                             </div>
                         </div>
                         <div class="catalog-item">
-                            <img src="img/catlog-pic-item-2.jpg" alt="SUNSET" />
+                            <img src="img/catlog-pic-item-2.jpg" width="240" height="240" alt="SUNSET" />
                             <div class="catalog-item-desc">
                                 <h2>Sunset</h2>
                                 <p>Интернет магазин с личным кабинетом</p>
@@ -104,7 +107,7 @@
                             </div>
                         </div>
                         <div class="catalog-item">
-                            <img src="img/catlog-pic-item-3.jpg" alt="FORTE" />
+                            <img src="img/catlog-pic-item-3.jpg" width="240" height="240" alt="FORTE" />
                             <div class="catalog-item-desc">
                                 <h2>FORTE</h2>
                                 <p>Отличный макет для личного блога</p>
@@ -112,7 +115,7 @@
                             </div>
                         </div>
                         <div class="catalog-item">
-                            <img src="img/catlog-pic-item-4.jpg" alt="MODERN ORGANIC THAI" />
+                            <img src="img/catlog-pic-item-4.jpg" width="240" height="240" alt="MODERN ORGANIC THAI" />
                             <div class="catalog-item-desc">
                                 <h2>Modern Organic THAI</h2>
                                 <p>Сайт для ресторана быстрого питания</p>
@@ -120,7 +123,7 @@
                             </div>
                         </div>
                         <div class="catalog-item">
-                            <img src="img/catlog-pic-item-5.jpg" alt="AVENUE" />
+                            <img src="img/catlog-pic-item-5.jpg" width="240" height="240" alt="AVENUE" />
                             <div class="catalog-item-desc">
                                 <h2>AVENUE</h2>
                                 <p>Макет для блога о путешествиях</p>
@@ -128,7 +131,7 @@
                             </div>
                         </div>
                         <div class="catalog-item">
-                            <img src="img/catlog-pic-item-6.jpg" alt="DOVETAIL" />
+                            <img src="img/catlog-pic-item-6.jpg" width="240" height="240" alt="DOVETAIL" />
                             <div class="catalog-item-desc">
                                 <h2>DOVETAIL</h2>
                                 <p>Интернет-магазин с галереей товаров</p>
@@ -138,10 +141,18 @@
                     </div>
                     <div class="catalog-page">
                         <ul>
-                            <li><a class="page-btn catalog-page-active">1</a></li>
-                            <li><a class="page-btn catalog-page-btn" href="#">2</a></li>
-                            <li><a class="page-btn catalog-page-btn" href="#">3</a></li>
-                            <li><a class="page-btn catalog-page-next" href="#">следущая</a></li>
+                            <li>
+                                <a class="page-btn catalog-page-active">1</a>
+                            </li>
+                            <li>
+                                <a class="page-btn catalog-page-btn" href="#">2</a>
+                            </li>
+                            <li>
+                                <a class="page-btn catalog-page-btn" href="#">3</a>
+                            </li>
+                            <li>
+                                <a class="page-btn catalog-page-next" href="#">Следующая</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -164,12 +175,12 @@
                     <p class="contacts-info">
                         тел. +7 (812) 275-75-75
                     </p>
-                    <a class="btn contact-btn" href="#">Напишите нам</a>
+                    <a class="btn contact-btn" href="form.html">Напишите нам</a>
                 </div>
                 <div class="marker">
-                    <img src="img/marker-nerds-map.png" alt="Тут!" />
+                    <img src="img/marker-nerds-map.png" width="231" height="190" alt="Тут!" />
                     <div class="logo-map">
-                        <img src="img/logo-nerds-map.png" alt="Нёрдс" />
+                        <img src="img/logo-nerds-map.png" width="92" height="37" alt="Нёрдс" />
                     </div>
                 </div>
             </div>
@@ -178,15 +189,9 @@
             <div class="container">
                 <div class="footer clearfix">
                     <div class="social">
-                        <a href="#" class="social-btn btn-vk">
-
-                        </a>
-                        <a href="#" class="social-btn btn-fb">
-
-                        </a>
-                        <a href="#" class="social-btn btn-inst" >
-
-                        </a>
+                        <a href="#" class="social-btn btn-vk"></a>
+                        <a href="#" class="social-btn btn-fb"></a>
+                        <a href="#" class="social-btn btn-inst" ></a>
                     </div>
                     <div class="footer-desc">
                         <p class="footer-title">
