@@ -57,7 +57,7 @@ h2 {
 
 .navigation ul {
     margin: 0;
-    padding: 0;
+    padding: 54px 0 0 0;
     list-style: none;
     font-size: 0;
 }
@@ -65,7 +65,7 @@ h2 {
 .navigation li {
     display: inline-block;
     vertical-align: top;
-    margin: 54px 23px 0px 23px;
+    margin: 0px 23px 0px 23px;
     font-size: 14px;
     line-height: 30px;
     color: #000000;
@@ -153,7 +153,7 @@ h2 {
 
 .basket:active::before {
   background: url("../img/sprites/spritesheet.png");
-  background-position: -5px -334px;
+  background-position: -5px -333px;
 }
 
 /*Слайдер*/
@@ -255,17 +255,17 @@ h2 {
 
 .slide:nth-child(1) {
     background: url("../img/index-slider-img-1.png") no-repeat;
-    background-position: 100% 10px;
+    background-position: 100% 0px;
 }
 
 .slide:nth-child(2) {
     background: url("../img/index-slider-img-2.png") no-repeat;
-    background-position: 100% 10px;
+    background-position: 100% 0px;
 }
 
 .slide:nth-child(3) {
     background: url("../img/index-slider-img-3.png") no-repeat;
-    background-position: 100% 10px;
+    background-position: 100% 0px;
 }
 
 .slide {
