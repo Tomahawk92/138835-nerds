@@ -23,8 +23,8 @@
                         <li>
                             <a href="#">Клиенты</a>
                         </li>
-                        <li>
-                            <a class="active" href="catalog.html">Магазин</a>
+                        <li class="active">
+                            <a href="catalog.html">Магазин</a>
                         </li>
                         <li>
                             <a href="#">Контакты</a>
@@ -51,6 +51,21 @@
                             <fieldset>
                                 <legend>Стоимость:</legend>
                                 <!-- Диапазон выбора цен -->
+                                <div class="range-filter">
+                                    <div class="range-controls">
+                                        <div class="scale">
+                                        <div class="bar">
+                                            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                                        </div>
+                                    </div>
+                                        <div class="toggle toggle-min"></div>
+                                        <div class="toggle toggle-max"></div>
+                                  </div>
+                                  <div class="price-controls">
+                                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                        <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                                  </div>
+                                </div>
                             </fieldset>
                         </div>
                             <fieldset>
