@@ -1025,7 +1025,6 @@ input[type="checkbox"]:checked + label::after {
     margin-left: 680px;
     top: 112px;
     bottom: 115px;
-    z-index: 2;
 }
 
 
