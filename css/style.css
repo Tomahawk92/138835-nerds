@@ -729,12 +729,12 @@ input[type="checkbox"] + label::before {
     width: 24px;
     height: 24px;
     background: url("../img/sprites/spritesheet.png");
-    background-position: -4px -451px;
+    background-position: -5px -451px;
 }
 
 input[type="checkbox"] + label:hover::before {
     background: url("../img/sprites/spritesheet.png");
-    background-position: -4px -421px;
+    background-position: -5px -421px;
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -746,13 +746,13 @@ input[type="checkbox"]:checked + label::after {
     top: -2px;
     left: -1px;
     background: url("../img/sprites/spritesheet.png");
-    background-position: -4px -390px;
+    background-position: -4px -389px;
     background-color: #ffffff;
 }
 
 input[type="checkbox"] + label:hover::after {
     background: url("../img/sprites/spritesheet.png");
-    background-position: -4px -356px;
+    background-position: -4px -355px;
     background-color: #ffffff;
 }
 
