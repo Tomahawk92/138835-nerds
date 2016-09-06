@@ -5,7 +5,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
 
         <title>Нёрдс</title>
     </head>
@@ -198,7 +198,7 @@
                     <p class="contacts-info">
                         тел. +7 (812) 275-75-75
                     </p>
-                    <a class="btn contact-btn" href="form.html">Напишите нам</a>
+                    <a class="btn map-write-btn contact-btn" href="form.html">Напишите нам</a>
                 </div>
                 <!-- <div class="marker">
                     <img src="img/marker-nerds-map.png" width="231" height="190" alt="Тут!" />
@@ -227,6 +227,25 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-content">
+            <button class="btn modal-content-close red-btn" type="button" title="закрыть">закрыть</button>
+            <form class="write-us" method="post" id="write-us">
+                <label for="write-name">
+                    <span class="write-us-span">Ваше имя:</span>
+                    <input class="write-us-field" type="text" name="write-name" id="write-name" placeholder="представьтесь, пожалуйста">
+                </label>
+                <label for="write-email">
+                    <span class="write-us-span">Ваш e-mail:</span>
+                    <input class="write-us-field" type="text" name="e-mail" id="write-email" placeholder="для отправки ответа">
+                </label>
+                <label for="mail-text">
+                    <span class="write-us-span">Текст письма:</span>
+                    <textarea class="write-us-text" form="write-us" name="mail-text" id="mail-text">в свободной форме</textarea>
+                </label>
+                <button class="btn write-us-btn red-btn" type="submit">отправить</button>
+            </form>
+        </div>
+        <script src="js/script.min.js"></script>
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LU80Zv_RUEKls5hJqvIoPKqoZZoNkz3Q&amp;width=100%&amp;height=416&amp;id=ya-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
     </body>
 </html>
