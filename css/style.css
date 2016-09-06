@@ -1,5 +1,5 @@
 body {
-    min-width: 880px;
+    min-width: 900px;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
@@ -45,8 +45,9 @@ h2 {
     float: left;
     width: 140px;
     height: 56px;
-    margin-right: 160px;
-    margin-top: 27px;
+    margin-right: 159px;
+    margin-left: 1px;
+    margin-top: 26px;
 }
 
 .navigation {
@@ -57,7 +58,7 @@ h2 {
 
 .navigation ul {
     margin: 0;
-    padding: 54px 0 0 0;
+    padding: 53px 0 0 0;
     list-style: none;
     font-size: 0;
 }
@@ -96,7 +97,7 @@ h2 {
 .navigation .active::after {
     content: "";
     position: absolute;
-    top: 27px;
+    top: 26px;
     left: 0px;
     width: 100%;
     height: 2px;
@@ -105,7 +106,7 @@ h2 {
 
 .user-block {
     float: right;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 1px 0px 0px;
     max-width: 140px;
     min-height: 83px;
 }
@@ -123,8 +124,8 @@ h2 {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-top: 54px;
-    padding-left: 50px;
+    margin-top: 53px;
+    padding-left: 0px;
     font-size: 14px;
     line-height: 30px;
     color: #000000;
@@ -137,7 +138,7 @@ h2 {
     content: "";
     position: absolute;
     top: 5px;
-    left: 21px;
+    left: -28px;
     width: 16px;
     height: 16px;
     background: url("../img/sprites/spritesheet.png");
@@ -147,19 +148,20 @@ h2 {
 
 .basket:hover::before {
   background: url("../img/sprites/spritesheet.png");
-  background-position: -5px -5px;
+  background-position: -5px -4px;
   opacity: 1;
 }
 
 .basket:active::before {
   background: url("../img/sprites/spritesheet.png");
   background-position: -5px -333px;
+  opacity: 0.25;
 }
 
 /*Слайдер*/
 
 .wrapper-slider {
-    padding-top: 50px;
+    padding-top: 42px;
     background: #eeeeee;
 
 }
@@ -168,16 +170,17 @@ h2 {
     position: relative;
     width: 880px;
     height: 310px;
-    margin: 0 auto;
+    margin: 0px auto;
+    overflow: hidden;
 }
 
 .slider-controls {
     position: absolute;
-    bottom: 95px;
+    bottom: 94px;
     left: 50%;
     width: 200px;
     height: 10px;
-    margin-left: -100px;
+    margin-left: -110px;
     text-align: center;
     z-index: 100;
 }
@@ -244,28 +247,28 @@ h2 {
 
 .slide p {
   font-weight: 500;
-  line-height: 22px;
+  margin: 19px 0 27px;
   color: #283136;
 }
 
 .slide .btn {
-    margin-top: 25px;
+
     padding: 10px 70px;
 }
 
 .slide:nth-child(1) {
     background: url("../img/index-slider-img-1.png") no-repeat;
-    background-position: 100% 0px;
+    background-position: 100% 10px;
 }
 
 .slide:nth-child(2) {
     background: url("../img/index-slider-img-2.png") no-repeat;
-    background-position: 100% 0px;
+    background-position: 100% 10px;
 }
 
 .slide:nth-child(3) {
     background: url("../img/index-slider-img-3.png") no-repeat;
-    background-position: 100% 0px;
+    background-position: 100% 10px;
 }
 
 .slide {
@@ -331,8 +334,8 @@ h2 {
 }
 
 .contact-btn {
-    margin-left: 2px;
-    padding: 10px 54px;
+    margin: 13px 0px 0 3px;
+    padding: 10px 54px 10px 54px;
 }
 
 .btn-catalog {
@@ -366,7 +369,6 @@ h2 {
 /*Блок сервисов*/
 
 .services {
-    margin-bottom: 80px;
     padding-bottom: 80px;
     background: #ffffff;
     min-height: 380px;
@@ -387,6 +389,10 @@ h2 {
     margin-right: 0px;
 }
 
+.services-item-pic {
+    height: 124px;
+    margin-bottom: 23px
+}
 .services-item h2 {
     font-size: 18px;
     line-height: 30px;
@@ -402,6 +408,11 @@ h2 {
 
 /*Блок о компании*/
 
+.about-desc {
+    width: 880px;
+    margin-bottom: 12px;
+}
+
 .description {
     float: left;
     width: 620px;
@@ -409,7 +420,8 @@ h2 {
 
 .about {
     min-height: 375px;
-    padding-bottom: 65px;
+    padding-top: 34px;
+    padding-bottom: 54px;
     background: #ffffff;
     border-bottom: 2px solid #eeeeee;
 }
@@ -417,12 +429,14 @@ h2 {
 .description-title {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 18px;
 }
 
 .about-logo {
     float: right;
-    width: 240px;
-    margin-bottom: 50px;
+    padding: 0px 0px 0px 12px;
+    margin-top: 24px;
+    width: 232px;
     text-align: center;
 }
 
@@ -432,9 +446,8 @@ h2 {
     font-size: 16px;
     line-height: 8.56px;
     text-transform: uppercase;
-    padding-left: 0px;
-    padding-top: 27px;
-    padding-bottom: 73px;
+    padding-right: 4px;
+    padding-top: 28px;
 }
 
 .logo-year::before {
@@ -462,23 +475,30 @@ h2 {
 
 .list-headline {
     text-transform: uppercase;
+    padding-bottom: 5px;
 }
 
 .services-left {
     float: left;
     width: 620px;
     margin-right: 20px;
+    color: #283136;
 }
 
 .services-right {
     float: right;
     width: 240px;
+    color: #283136;
+}
+
+.services-list {
+    padding-left: 37px;
 }
 
 .services-list li {
     position: relative;
     list-style: none;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .services-list li:last-child {
@@ -489,7 +509,7 @@ h2 {
     content: "";
     position: absolute;
     top: 10px;
-    left: -40px;
+    left: -37px;
     width: 25px;
     height: 2px;
     background-color: #fb565a;
@@ -498,7 +518,7 @@ h2 {
 /*Блок с клиентами*/
 
 .clients {
-    padding: 10px 0px;
+    padding: 10px 0px 31px;
     margin-bottom: 85px;
     border-bottom: 2px solid #eeeeee;
 }
@@ -506,13 +526,12 @@ h2 {
 .clients-logo {
     float: left;
     height: 125px;
-    width: 240px;
-    margin-right: 80px;
+    width: 220px;
+    margin-right: 100px;
     text-align: center;
     background: #ffffff;
-    line-height: 125px;
+    line-height: 150px;
 }
-
 .clients-logo img {
     vertical-align: middle;
     opacity: 0.2;
@@ -524,6 +543,7 @@ h2 {
 
 .clients-logo:nth-child(3n) {
     margin-right: 0px;
+    width: 230px;
 }
 
 /*Конец блока с клиентами*/
@@ -930,16 +950,20 @@ input[type="checkbox"]:checked + label::after {
 .map{
     position: relative;
     text-align: center;
-    margin-bottom: 70px;
+    margin:0px auto 70px auto;
 }
 
 .map-wrapper {
     position: relative;
+    margin-bottom: 77px;
 }
 
 #ya-map {
-    display: inline-block;
-    vertical-align: top;
+    width: 100%;
+    height: 416px;
+    z-index: 8;
+    background: url("../img/map.jpg") top center;
+    background-repeat: no-repeat;
 }
 
 .contacts {
@@ -969,7 +993,9 @@ input[type="checkbox"]:checked + label::after {
     margin-left: 680px;
     top: 112px;
     bottom: 115px;
+    z-index: 2;
 }
+
 
 .logo-map {
     position: absolute;
@@ -994,7 +1020,7 @@ input[type="checkbox"]:checked + label::after {
     vertical-align: top;
     width: 62px;
     height: 62px;
-    margin-right: 27px;
+    margin-right: 24px;
     border-radius: 30px;
     background:  #e1e1e1;
 }
@@ -1047,7 +1073,7 @@ input[type="checkbox"]:checked + label::after {
 
 .footer-desc {
     float: right;
-    width: 570px;
+    width: 562px;
 }
 
 .footer-title {
@@ -1059,5 +1085,6 @@ input[type="checkbox"]:checked + label::after {
 .footer-text {
     font-size: 16px;
     font-weight: 22px;
+    margin-top: 8px;
     color: #283136;
 }
