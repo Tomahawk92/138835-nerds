@@ -378,7 +378,7 @@ h2 {
     margin: 80px 80px 0 0;
 }
 
-.services-item:last-child {
+.services-item:nth-child(3n) {
     float: right;
     width: 240px;
     margin-right: 0px;
@@ -624,6 +624,7 @@ h2 {
     display: inline-block;
     width: 50%;
     font-size: 16px;
+    vertical-align: top;
     text-transform: uppercase;
 }
 
@@ -694,7 +695,6 @@ input[type="radio"] + label:hover::before {
     border: 3px solid #b5b5b5;
 }
 
-
 input[type="radio"]:checked + label::after {
     content: "";
     position: absolute;
@@ -729,9 +729,13 @@ input[type="checkbox"] + label::before {
     width: 24px;
     height: 24px;
     background: url("../img/sprites/spritesheet.png");
-    background-position: -5px -384px;
+    background-position: -4px -451px;
 }
 
+input[type="checkbox"] + label:hover::before {
+    background: url("../img/sprites/spritesheet.png");
+    background-position: -4px -421px;
+}
 
 input[type="checkbox"]:checked + label::after {
     content: "";
@@ -742,10 +746,19 @@ input[type="checkbox"]:checked + label::after {
     top: -2px;
     left: -1px;
     background: url("../img/sprites/spritesheet.png");
-    background-position: -4px -417px;
+    background-position: -4px -390px;
     background-color: #ffffff;
 }
 
+input[type="checkbox"] + label:hover::after {
+    background: url("../img/sprites/spritesheet.png");
+    background-position: -4px -356px;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:disabled + label {
+   opacity: 0.4;
+}
 .catalog {
     float: right;
     width: 570px;
@@ -809,6 +822,10 @@ input[type="checkbox"]:checked + label::after {
     cursor: pointer;
 }
 
+.filter-down:hover {
+    border-top: 9px solid #c1c1c1;
+}
+
 .filter-down:active {
     border-top: 9px solid #000000;;
 }
@@ -824,6 +841,10 @@ input[type="checkbox"]:checked + label::after {
     border-bottom: 9px solid #c1c1c1;
     cursor: pointer;
   }
+
+.filter-up:hover {
+    border-bottom: 9px solid #c1c1c1;
+}
 
 .filter-up:active {
     border-bottom: 9px solid #000000;
@@ -963,6 +984,10 @@ input[type="checkbox"]:checked + label::after {
     box-shadow: inset 0px 3px 0 0px #b5b5b5;
 }
 
+.catalog-page-active:hover {
+    background: none;
+    box-shadow: none;
+}
 .catalog-page-active:active {
     background: none;
     box-shadow: none;
@@ -1218,16 +1243,16 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .write-us label {
+    display: inline-block;
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     font-size: 16px;
     line-height: 18px;
-    display: inline-block;
     vertical-align: top;
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 
 .write-us-span {
-    display: block;
     margin-top: 0;
     margin-bottom: 10px;
 }

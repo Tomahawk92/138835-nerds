@@ -87,7 +87,7 @@
                                 <label for="checkbox-news">Новости</label>
                                 <input type="checkbox" id="checkbox-gallery" name="gallery">
                                 <label for="checkbox-gallery">Галерея</label>
-                                <input type="checkbox" id="checkbox-basket" name="basket">
+                                <input type="checkbox" id="checkbox-basket" name="basket" disabled>
                                 <label for="checkbox-basket">Корзина</label>
                             </fieldset>
                             <button class="btn btn-filter-show" type="submit" name="show">Показать</button>
@@ -108,7 +108,9 @@
                         <div class="catalog-item">
                             <img src="img/catlog-pic-item-1.jpg" width="240" height="240" alt="AVIATOR" />
                             <div class="catalog-item-desc">
-                                <h2><a href="#" class="maket-name">AVIATOR</a></h2>
+                                <h2>
+                                    <a href="#" class="maket-name">AVIATOR</a>
+                                </h2>
                                 <p>Одностраничный макет<br> с авторским дизайном</p>
                                 <a href="#" class="btn btn-catalog">8000 Р.</a>
                             </div>
@@ -116,7 +118,9 @@
                         <div class="catalog-item">
                             <img src="img/catlog-pic-item-2.jpg" width="240" height="240" alt="SUNSET" />
                             <div class="catalog-item-desc">
-                                <h2><a href="#" class="maket-name">Sunset</a></h2>
+                                <h2>
+                                    <a href="#" class="maket-name">Sunset</a>
+                                </h2>
                                 <p>Интернет магазин<br> с личным кабинетом</p>
                                 <a href="#" class="btn btn-catalog">10000 Р.</a>
                             </div>
@@ -124,7 +128,9 @@
                         <div class="catalog-item">
                             <img src="img/catlog-pic-item-3.jpg" width="240" height="240" alt="FORTE" />
                             <div class="catalog-item-desc">
-                                <h2><a href="#" class="maket-name">FORTE</a></h2>
+                                <h2>
+                                    <a href="#" class="maket-name">FORTE</a>
+                                </h2>
                                 <p>Отличный макет<br> для личного блога</p>
                                 <a href="#" class="btn btn-catalog">5000 Р.</a>
                             </div>
@@ -132,7 +138,9 @@
                         <div class="catalog-item">
                             <img src="img/catlog-pic-item-4.jpg" width="240" height="240" alt="MODERN ORGANIC THAI" />
                             <div class="catalog-item-desc">
-                                <h2><a href="#" class="maket-name">Modern Organic THAI</a></h2>
+                                <h2>
+                                    <a href="#" class="maket-name">Modern Organic THAI</a>
+                                </h2>
                                 <p>Сайт для ресторана быстрого питания</p>
                                 <a href="#" class="btn btn-catalog">12000 Р.</a>
                             </div>
@@ -140,7 +148,9 @@
                         <div class="catalog-item">
                             <img src="img/catlog-pic-item-5.jpg" width="240" height="240" alt="AVENUE" />
                             <div class="catalog-item-desc">
-                                <h2><a href="#" class="maket-name">AVENUE</a></h2>
+                                <h2>
+                                    <a href="#" class="maket-name">AVENUE</a>
+                                </h2>
                                 <p>Макет для блога<br> о путешествиях</p>
                                 <a href="#" class="btn btn-catalog">8000 Р.</a>
                             </div>
@@ -175,10 +185,7 @@
         </main>
         <div class="map-wrapper">
             <div class="map">
-                <!-- Карта -->
-                <!-- <img src="img/map.jpg" alt="Карта" width="1199" height="416" /> -->
                 <div id="ya-map">
-
                 </div>
             </div>
             <div class="container">
@@ -225,16 +232,16 @@
         <div class="modal-content">
             <button class="btn modal-content-close red-btn" type="button" title="закрыть">закрыть</button>
             <form class="write-us" method="post" id="write-us">
-                <label for="write-name">
-                    <span class="write-us-span">Ваше имя:</span>
+                <label for="write-name write-us-span">
+                    Ваше имя:
                     <input class="write-us-field" type="text" name="write-name" id="write-name" placeholder="представьтесь, пожалуйста">
                 </label>
-                <label for="write-email">
-                    <span class="write-us-span">Ваш e-mail:</span>
+                <label for="write-email write-us-span">
+                    Ваш e-mail:
                     <input class="write-us-field" type="text" name="e-mail" id="write-email" placeholder="для отправки ответа">
                 </label>
-                <label for="mail-text">
-                    <span class="write-us-span">Текст письма:</span>
+                <label for="mail-text write-us-span">
+                    Текст письма:
                     <textarea class="write-us-text" form="write-us" name="mail-text" id="mail-text">в свободной форме</textarea>
                 </label>
                 <button class="btn write-us-btn red-btn" type="submit">отправить</button>
